@@ -1,4 +1,8 @@
 apply plugin: 'com.android.library'
+// 1. 【必加】 启用 android-maven 插件
+apply plugin: 'com.github.dcendents.android-maven'
+// 2. 【必加】 关联Github地址, 格式为 com.github.(用户名)
+group = 'com.github.zhengweichao'
 
 android {
     compileSdkVersion 28
@@ -28,5 +32,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'org.aspectj:aspectjrt:1.8.9'
+    implementation 'org.aspectj:aspectjrt:1.9.5'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 }
