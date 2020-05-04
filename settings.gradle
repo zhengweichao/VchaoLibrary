@@ -1,0 +1,2 @@
+rootProject.name='vcLibrary'
+include ':app', ':permission'
